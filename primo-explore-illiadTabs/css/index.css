@@ -1,0 +1,64 @@
+#getit_link1_0 prm-view-online-after {display:none;}
+prm-tags-list div.layout-align-start-start.layout-column {display:none;}
+
+.illiadWrapper {
+  display: flex;  
+  flex-flow: row wrap; 
+  text-align: center;
+}
+
+.requestButtonWrapper {
+  display: flex;  
+  flex-flow: row wrap; 
+  text-align: center;
+
+}
+
+.requestButtonWrapper > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+.illiadWrapper > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+.illiadMain {
+  text-align: left;
+  background: rgb(248, 248, 248);
+}
+
+.illiadAside-2 {
+  background: white;
+  text-align: center;
+}
+
+.illiadAside-2 md-radio-button ._md-label {
+  margin-left:20px !important;
+
+}
+
+.illiadAside-2 .md-datepicker-button{
+ display: none;
+}
+
+aside.illiadAside.illiadAside-2 > div > md-input-container > label {
+  padding-left:0px !important;
+}
+
+@media all and (min-width: 600px) {
+  .illiadAside-2 { flex: 12 auto; }
+  .requestButtonAside-2 { flex: 12 auto; }
+  .requestButtonAside-1 { flex: 12 auto; }
+}
+
+@media all and (min-width: 800px) {
+  .illiadMain    { flex: 4 0px; }
+  .illiadMain    { order: 2; }
+  .requestButtonMain  { flex: 6 0px; }
+  .requestButtonMain  { order: 2; }
+  .illiadAside-2 { order: 3; }
+  .requestButtonAside-2 { order: 3; }
+  .requestButtonAside-1 { order: 1; }
+}
